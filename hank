@@ -1,6 +1,6 @@
 #!/bin/bash
 
-quotes="/usr/share/doc/hank/hankquotes"
+quotes="hankquotes"
 if [ -f "$quotes" ]
 then
 cat << HANK
@@ -33,6 +33,6 @@ LINE=`expr $RAND % $LINES + 1`
 head -$LINE $quotes | tail -1
 exit 1
 else
-	echo "No file $file. Go to http://lehomepage.co.nf/hank-instructions for more information."
+	echo "No file $file. Go to http://github.com/LeTacoBot/hank for more information."
 fi
  
