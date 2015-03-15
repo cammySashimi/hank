@@ -8,7 +8,7 @@ A Bash terminal program. Hank Hill besows his mighty sage wisdom upon the user!
 
 (2) Unzip the file (If you downloaded the zip) and cd into it.
 
-```unzip hank.zip```
+```unzip hank-master.zip```
 
 (3) Give "hank" execute permissions.
 
