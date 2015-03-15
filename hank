@@ -27,12 +27,13 @@ cat << HANK
       |: : :: : '''~----------~''
 HANK
 
-RAND=`cat /proc/sys/kernel/random/uuid | cut -c1-4 | od -d | head -1 | cut -d' ' -f2`
+RAND=`cat /dev/urandom/ | cut -c1-4 | od -d | head -1 | cut -d' ' -f2`
 LINES=`cat $quotes | wc -l`
 LINE=`expr $RAND % $LINES + 1`
 head -$LINE $quotes | tail -1
 exit 1
 else
-	echo "No file $file. Go to http://github.com/LeTacoBot/hank for more information."
+	echo "No file $quotes. Go to http://github.com/LeTacoBot/hank for more information."
+	exit 1337
 fi
  
